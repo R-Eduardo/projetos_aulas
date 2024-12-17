@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Peixe Nadando</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        .fish {
+            width: 100px;
+            height: 50px;
+            background-color: orange;
+            border-radius: 50% 50% 0 0;
+            position: absolute;
+            left: 50px;
+            animation: swim 2s infinite linear;
+        }
+
+        @keyframes swim {
+            0% {
+                left: 50px;
+            }
+            50% {
+                left: calc(100% - 100px);
+            }
+            100% {
+                left: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="fish"></div>
+</body>
+</html>
